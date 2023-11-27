@@ -69,9 +69,6 @@ setup(
     # setup_requires="" 指定安装的依赖，同样可以使用pip freeze > requirements.txt 生成依赖
     dependency_links=[],  # 添加依赖链接
     include_package_data = True,
-    package_data={
-        '': ['*.txt', '*.yaml', '*.yml', '*.csv', '*.docx', '*.pdf'],
-    },
     install_requires=[
         "numpy"
     ]

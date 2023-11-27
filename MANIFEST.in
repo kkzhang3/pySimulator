@@ -7,8 +7,14 @@
 
 # include README.md
 recursive-include modules *.pyd
+recursive-include modules *.txt
+recursive-include modules *.yml
+recursive-include modules *.yaml
+recursive-include modules *.csv
+recursive-include modules *.docx
+recursive-include modules *.pdf
+
 
 include modules/gui/*.svg
 graft modules/SCRsim/mpcojp
 
-# exclude modules/SCRsim/process/SCRProcess.py
