@@ -1,0 +1,96 @@
+name: daily build
+run-name: ${{ github.actor }} trys to release
+on:
+  # workflow_dispatch: 
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  Compile_Python_Files:
+    runs-on: windows-latest  
+    strategy:
+      matrix:
+        include:
+          - python-version: '3.8.10'
+            architecture: 'x86'
+          - python-version: '3.11.6'
+            architecture: 'x64'
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v4  
+
+      - name: Set up Python ${{ matrix.python-version }}  # 设置 Python 环境
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: ${{ matrix.architecture }}
+
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+        
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install setuptools wheel  # Add other dependencies if needed
+          pip install cython        # Install Cython to compile .py files to .pyd
+
+      - name: run python setup.py sdist
+        run: |
+            # Replace this with your script or commands to compile .py files to .pyd
+            python setup.py sdist
+
+
+      - name: Upload file as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: ./dist/
+
+
+  Release:
+    runs-on: windows-latest  
+    needs: Compile_Python_Files  
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v4  
+
+      - name: Generate release tag
+        id: gen_tag
+        run: |
+              $date = Get-Date -Format "yyyyMMdd_hhmm"
+              echo "RELEASE_TAG=pySimulation_${date}" >> $env:GITHUB_OUTPUT
+        shell: powershell
+
+      - name: Download artifact
+        id: download
+        uses: actions/download-artifact@v3
+        with:
+          name: my-artifact
+          path: ./my_artifact
+
+      - name: 'Echo download path'
+        run: echo ${{steps.download.outputs.download-path}}
+
+      - name: Display structure of downloaded files
+        run: ls -R
+
+      - name: Release Executable
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: release_${{steps.gen_tag.outputs.RELEASE_TAG}}
+          files: |
+            my_artifact/* 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
