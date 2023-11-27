@@ -1,0 +1,15 @@
+# include pattern: Include all files matching the pattern.
+# exclude pattern: Exclude all files matching the pattern.
+# recursive-include dir pattern: Include all files under dir matching the pattern.
+# recursive-exclude dir pattern: Exclude all files under dir matching the pattern.
+# graft dir: Include all files under directory dir.
+# prune dir: Exclude all files under directory dir.
+
+# include README.md
+recursive-include modules *.pyd
+
+include modules/gui/*.svg
+# graft modules/SCRsim 
+graft modules/SISOSim1 
+
+# exclude modules/SCRsim/process/SCRProcess.py
