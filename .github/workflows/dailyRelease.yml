@@ -40,6 +40,11 @@ jobs:
           pip install setuptools wheel  # Add other dependencies if needed
           pip install cython        # Install Cython to compile .py files to .pyd
 
+      - name: Compile .py files to .pyd
+        run: |
+            # Replace this with your script or commands to compile .py files to .pyd
+            python compile_pyd.py
+      
       - name: run python setup.py sdist
         run: |
             # Replace this with your script or commands to compile .py files to .pyd
