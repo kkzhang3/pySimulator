@@ -12,27 +12,8 @@ from modules.__init__ import __version__
 
 source_files = [
     'modules/gui/QtGUI.py',
-    'modules/MIMO_2x2/process/MIMOmodel.py',
-    'modules\SISOSim1\process\sim.py',
 ]
 
-
-# # 定义一个函数来在指定目录创建__init__.py文件（如果不存在）
-# def create_init_if_not_exists(directory):
-#     init_file = os.path.join(directory, '__init__.py')
-#     if not os.path.exists(init_file):
-#         open(init_file, 'a').close()  # 创建一个空的__init__.py文件
-#         # print(f"Created {init_file}")
-#     else:
-#         # print(f"{init_file} already exists")
-#         pass
-
-# # 遍历文件列表
-# for file_path in source_files:
-#     directory = os.path.abspath(os.path.dirname(file_path))
-#     while len(directory) > len(os.getcwd()):
-#         create_init_if_not_exists(directory)
-#         directory = os.path.dirname(directory)
 
 source_files_pyx = []
 
