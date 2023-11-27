@@ -16,8 +16,8 @@ jobs:
         include:
           - python-version: '3.8.10'
             architecture: 'x86'
-          - python-version: '3.11.6'
-            architecture: 'x64'
+          # - python-version: '3.11.6'
+          #   architecture: 'x64'
     defaults:
       run:
         working-directory: ./
