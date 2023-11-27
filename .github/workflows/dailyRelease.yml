@@ -86,7 +86,9 @@ jobs:
       - name: Generate release tag
         id: gen_tag
         run: |
-              $date = Get-Date -Format "yyyyMMdd_hhmm"
+              $utcTime = (Get-Date).ToUniversalTime()
+              $beijingTime = $utcTime.AddHours(8)
+              $date = $beijingTime.ToString("yyyyMMdd_HHmm")
               echo "RELEASE_TAG=pySimulation_${date}" >> $env:GITHUB_OUTPUT
         shell: powershell
 
