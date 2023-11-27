@@ -6,15 +6,14 @@
 # prune dir: Exclude all files under directory dir.
 
 # include README.md
-recursive-include modules *.pyd
-recursive-include modules *.txt
-recursive-include modules *.yml
-recursive-include modules *.yaml
-recursive-include modules *.csv
-recursive-include modules *.docx
-recursive-include modules *.pdf
+recursive-include modules/gui *.pyd *.svg
 
 
-include modules/gui/*.svg
-graft modules/SCRsim/mpcojp
+graft modules/SCRsim
+graft modules/SISOSim1
+graft modules/MIMO_2x2
+graft modules/ShellModel
+
+
+
 
