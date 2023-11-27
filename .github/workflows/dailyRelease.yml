@@ -42,7 +42,7 @@ jobs:
       - name: Install Cython for Python 3.8.10 x86
         if: matrix.python-version == '3.8.10' && matrix.architecture == 'x86'
         run:
-          pip install Cython==0.29.21        # Install Cython to compile .py files to .pyd
+          pip install Cython==0.29.36        # Install Cython to compile .py files to .pyd
 
       - name: Install Cython for Python 3.11.6 x64
         if: matrix.python-version == '3.11.6' && matrix.architecture == 'x64'
