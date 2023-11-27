@@ -10,9 +10,6 @@ from Cython.Build import cythonize
 from modules.__init__ import __version__
 
 
-py_ver = f"py{platform.python_version()}_{platform.architecture()[0]}"
-ver = f"{__version__}_{py_ver}"
-
 source_files = [
     'modules/gui/QtGUI.py',
     'modules/MIMO_2x2/process/MIMOmodel.py',
@@ -60,7 +57,7 @@ setup(
 
 setup(
     name=f"pySimulation",
-    version=ver,
+    version=__version__,
     author="ZHANG KANGKANG",
     author_email="",
     description="",

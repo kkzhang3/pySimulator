@@ -45,6 +45,12 @@ jobs:
             # Replace this with your script or commands to compile .py files to .pyd
             python setup.py sdist
 
+      - name: Rename tar.gz
+        run: |
+            cd dist
+            Get-ChildItem -Filter *.tar.gz | Rename-Item -NewName {$_.Name -replace '.tar.gz', '-for-py${{ matrix.python-version }}-${{ matrix.architecture }}.tar.gz'}
+        shell: powershell
+    
 
       - name: Upload file as artifact
         uses: actions/upload-artifact@v3
