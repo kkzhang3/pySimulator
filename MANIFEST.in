@@ -9,7 +9,6 @@
 recursive-include modules *.pyd
 
 include modules/gui/*.svg
-# graft modules/SCRsim 
-graft modules/SISOSim1 
+graft modules/SCRsim/mpcojp
 
 # exclude modules/SCRsim/process/SCRProcess.py

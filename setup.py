@@ -16,7 +16,7 @@ ver = f"{__version__}_{py_ver}"
 source_files = [
     'modules/gui/QtGUI.py',
     'modules/MIMO_2x2/process/MIMOmodel.py',
-    'modules/py6.py',
+    'modules\SISOSim1\process\sim.py',
 ]
 
 
