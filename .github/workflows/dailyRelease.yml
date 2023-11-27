@@ -1,5 +1,5 @@
 name: daily build
-run-name: ${{ github.actor }} trys to release
+
 on:
   # workflow_dispatch: 
   push:
