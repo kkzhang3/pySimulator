@@ -72,13 +72,13 @@ import numpy as np
 from scipy import signal
 # sys.path.insert(0, r'D:\PythonFiles\tjdcs')  # 填写tjdcs目录,tjdcs版本>=0.9.23
 from collections import ChainMap
-from tjdcs import Simulink, TJProcSim2  
+from tjdcs import Simulink, MIMOSim  
 
 # 定义仿真流程
 class ShellSim(Simulink):
     def __init__(self) -> None:
         super().__init__(data = sim_ini_dict)
-        self.plant = TJProcSim2(plant_model, sim_ini_dict, Ts = 1)
+        self.plant = MIMOSim(plant_model, sim_ini_dict, Ts = 1)
 
         # 配置输出噪声序列
         self.N = 10000

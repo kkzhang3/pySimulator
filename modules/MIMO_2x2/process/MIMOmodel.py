@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import signal
 from collections import ChainMap
-from tjdcs import Simulink, TJProcSim2  
+from tjdcs import Simulink, MIMOSim  
 
 # 配置被控对象模型
 plant_model = { 'CV1': {'MV1': {'mode': 'tf_s', 'num_s': [0, 4.05], 'den_s': [20, 1], 'iodelay_s': 5},
@@ -29,7 +29,7 @@ sim_ini_dict = {'MV1': 15,
 class Sim(Simulink):
     def __init__(self) -> None:
         super().__init__(data = sim_ini_dict)
-        self.plant = TJProcSim2(plant_model, sim_ini_dict, Ts = 1)
+        self.plant = MIMOSim(plant_model, sim_ini_dict, Ts = 1)
 
         # 配置输出噪声序列
         self.N = 10000

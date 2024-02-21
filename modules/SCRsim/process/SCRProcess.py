@@ -59,8 +59,7 @@ import numpy as np
 from scipy import signal
 # sys.path.insert(0, r'D:\PythonFiles\tjdcs')  # 填写tjdcs目录,tjdcs版本>=0.9.23
 
-from tjdcs import Model
-from tjdcs import TJProcSim, Simulink
+from tjdcs import MIMOSim, Simulink
 import numpy as np
 from scipy import signal
 from collections import deque
@@ -86,9 +85,9 @@ class SCRSim(Simulink):
 
         data.update(self.efft_calculation())
 
-        self.Simulator1 = TJProcSim(Model(process_model1, Ts = 1), ini_Value_Dict = data)
-        self.Simulator2 = TJProcSim(Model(process_model2, Ts = 1), ini_Value_Dict = data)
-        self.Simulator3 = TJProcSim(Model(process_model3, Ts = 1), ini_Value_Dict = data)
+        self.Simulator1 = MIMOSim(process_model1, ini_value_dict = data)
+        self.Simulator2 = MIMOSim(process_model2, ini_value_dict = data)
+        self.Simulator3 = MIMOSim(process_model3, ini_value_dict = data)
 
         # # 配置输出噪声序列
         N = 10000

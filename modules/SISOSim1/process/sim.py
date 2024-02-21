@@ -1,5 +1,5 @@
 from collections import ChainMap
-from tjdcs import TJProcSim2, Simulink
+from tjdcs import MIMOSim, Simulink
 import numpy as np
 from scipy import signal
 
@@ -19,7 +19,7 @@ sim_ini_dict = {'MV1': 15,
 class SISOSim(Simulink):
     def __init__(self) -> None:
         super().__init__(data = sim_ini_dict)
-        self.plant1 = TJProcSim2(plant_model, sim_ini_dict, Ts = 1)
+        self.plant1 = MIMOSim(plant_model, sim_ini_dict, Ts = 1)
         # 配置输出噪声序列 
         self.N = 10000
         np.random.seed(2)
