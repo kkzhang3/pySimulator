@@ -1,0 +1,546 @@
+[2024-02-25 09:15:50,017] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:51,018] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:52,019] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:53,021] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:54,022] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:55,022] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:56,024] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:57,025] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:58,026] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:15:59,027] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:00,028] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:01,029] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:02,030] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:03,030] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:04,031] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:05,032] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:06,033] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:07,034] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:08,035] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:09,035] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:10,036] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:11,037] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:12,037] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:13,038] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:14,038] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:15,040] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:16,041] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:17,041] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:18,042] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:19,044] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:20,044] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:21,045] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:22,046] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:23,046] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:24,047] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:25,048] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:26,049] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:27,050] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:28,051] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:29,051] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:30,052] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:16:31,052] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 151, in run
+    self.record_data[key].append(value)
+    ~~~~~~~~~~~~~~~~^^^^^
+KeyError: 'TAIL_NOX_COPY'
+
+[2024-02-25 09:30:58,419] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
+[2024-02-25 09:30:59,418] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
+[2024-02-25 09:31:00,420] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
+[2024-02-25 09:31:01,421] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
+[2024-02-25 09:31:02,421] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
+[2024-02-25 09:31:03,423] [ERROR] [tjdcs.clsSimulinkOPCGateTask.SimulinkOPCGateTask] 任务运行错误Traceback (most recent call last):
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\OPCGatePy\opc_calc_task.py", line 32, in run
+    self.done()
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulinkOPCGateTask.py", line 46, in done
+    write_data_dict = self.Simulator.run(new_data=new_data_dict)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TaijiControl\python312\x64\Lib\site-packages\tjdcs\clsSimulink.py", line 145, in run
+    task_return = self.task()
+                  ^^^^^^^^^^^
+  File "d:\github0\pySimulator\modules\SCRsim2\process\SCRProcess.py", line 114, in task
+    y_Value_Dict2 = self.Simulator2(u_Value_Dict=data, v_Value_Dict=v_Value_Dict)
+                                                                    ^^^^^^^^^^^^
+NameError: name 'v_Value_Dict' is not defined
+
