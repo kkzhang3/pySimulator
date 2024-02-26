@@ -8,7 +8,7 @@
 # include README.md
 recursive-include modules/gui *.pyd *.svg
 
-graft modules/SCRsim
+graft modules/SCRsim2
 graft modules/SISOSim1
 graft modules/MIMO_2x2
 graft modules/ShellModel
