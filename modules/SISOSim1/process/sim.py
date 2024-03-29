@@ -4,14 +4,16 @@ import numpy as np
 from scipy import signal
 
 # 被控对象传递函数
-# plant_model = { 'CV1': {'MV1': {'mode': 'tf_z', 'num_z': [0, 1, 0.5], 'den_z': [1, -1.5, 0.7], 'iodelay_z': 0}}}
-plant_model = { 'CV1': {'MV1': {'mode': 'tf_s', 'num_s': [0.6], 'den_s': [20.0, 1.0], 'iodelay_s': 3},
+plant_model = { 'CV1': {'MV1': {'mode': 'tf_z', 'num_z': [0, 1, 0.5], 'den_z': [1, -1.5, 0.7], 'iodelay_z': 30},
                         'DV1': {'mode': 'tf_s', 'num_s': [2.6], 'den_s': [10.0, 1.0], 'iodelay_s': 1}}}
+# plant_model = { 'CV1': {'MV1': {'mode': 'tf_s', 'num_s': [0.6], 'den_s': [20.0, 1.0], 'iodelay_s': 3},
+#                         'DV1': {'mode': 'tf_s', 'num_s': [2.6], 'den_s': [10.0, 1.0], 'iodelay_s': 1}}}
 
 # 定义仿真初值（必须包含所有位号）
 sim_ini_dict = {'MV1': 15,
                 'CV1': 31,
                 'DV1': 10,
+                'v1': 0.0,
                 '__Random_CV_ONOFF': 0,
                 '__Random_DV_ONOFF': 0,}
 
@@ -34,9 +36,9 @@ class SISOSim(Simulink):
         # 获取CV的不可测干扰 (干扰的均值为0)
         if data['__Random_CV_ONOFF'] > 0:
             k = self.get_task_count() % self.N
-            v_dict = {'CV1': self.v1[k],}
+            v_dict = {'CV1': self.v1[k]}
         else:
-            v_dict = {}
+            v_dict = {'CV1': data['v1']}
 
         # 获取DV
         if data['__Random_DV_ONOFF'] > 0:
