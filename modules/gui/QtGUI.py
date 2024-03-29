@@ -3,6 +3,7 @@ import os
 import sys
 import importlib
 import yaml
+import subprocess, psutil, time
 from typing import List, Tuple, Dict 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from OPCGatePy.opc_calc_task import OPCCalcTask
@@ -147,6 +148,11 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
         exit_action.triggered.connect(self.close)
         file_menu.addAction(exit_action)
 
+        tool_menu = menu_bar.addMenu("Tool")
+        valid_opc_action = QtWidgets.QAction("Valid TaiJiOPCSim Connect...", self)
+        valid_opc_action.triggered.connect(self.valid_opc_connect)
+        tool_menu.addAction(valid_opc_action)
+
         # groupBox_1
         groupBox_1 = QtWidgets.QGroupBox(self)
         groupBox_1.setTitle(f"Process INFO")
@@ -230,7 +236,7 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
         group_tag = self.lineEdit_groupName.text()
         ojb = dynamic_import_object(directory_path, module_name, object_name)
         if isinstance(ojb, Simulink):
-            task = SimulinkOPCGateTask('127.0.0.1', 9999, ojb, group_tag)
+            task = SimulinkOPCGateTask('127.0.0.1', 9998, ojb, group_tag)
         elif isinstance(ojb, SimulinkOPCGateTask):
             task = ojb
         elif isinstance(ojb, OPCCalcTask):
@@ -257,6 +263,7 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
         if not self.worker_thread.isRunning():
             sys.stdout = original_stdout
             event.accept()
+            self.close_opc_sim()
             return
         reply = QtWidgets.QMessageBox.question(self,
                     'Message',
@@ -265,13 +272,43 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
                     QtWidgets.QMessageBox.No)
         if reply == QtWidgets.QMessageBox.Yes:
             self.close_process()
+            self.close_opc_sim()
             sys.stdout = original_stdout
             event.accept()  
         else:
             event.ignore()  
 
     def start_process_btn_clicked(self):
+        self.valid_opc_connect()
         self.start_process()
 
     def stop_process_btn_clicked(self):
         self.close_process()
+
+    def valid_opc_connect(self):
+        for proc in psutil.process_iter(['name']):
+            if proc.info['name'] == 'taiji-opcsim-server.exe':
+                print('TaiJiOPCSim is Launched')
+                return
+        filePath = '..\\bin\\taiji-opcsim-server.exe'
+        try:
+            self.sim_process = subprocess.Popen([filePath,'-s'], creationflags=subprocess.CREATE_NO_WINDOW)
+        except FileNotFoundError:
+            print('Not Found TaiJiOPCSim File:' + filePath)
+            return
+        except Exception as ex:
+            print('Launch TaiJiOPCSim Failed ' + ex)
+            return
+        time.sleep(1)
+        for proc in psutil.process_iter(['name']):
+            if proc.info['name'] == 'taiji-opcsim-server.exe':
+                print('Launch TaiJiOPCSim Successful')
+                return
+        self.sim_process = None
+        print('Launch TaiJiOPCSim Failed')
+
+    def close_opc_sim(self):
+        if self.sim_process:
+            self.sim_process.terminate()
+            self.sim_process.wait()
+

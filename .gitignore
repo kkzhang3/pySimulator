@@ -131,3 +131,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 mpccore/test1.ipynb
+.idea/modules.xml
+.idea/pySimulator.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
