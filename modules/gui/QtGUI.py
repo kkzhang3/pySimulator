@@ -236,7 +236,7 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
         group_tag = self.lineEdit_groupName.text()
         ojb = dynamic_import_object(directory_path, module_name, object_name)
         if isinstance(ojb, Simulink):
-            task = SimulinkOPCGateTask('127.0.0.1', 9998, ojb, group_tag)
+            task = SimulinkOPCGateTask('127.0.0.1', 9997, ojb, group_tag)
         elif isinstance(ojb, SimulinkOPCGateTask):
             task = ojb
         elif isinstance(ojb, OPCCalcTask):
