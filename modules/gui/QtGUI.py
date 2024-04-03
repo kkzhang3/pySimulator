@@ -290,7 +290,11 @@ class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
             if proc.info['name'] == 'taiji-opcsim-server.exe':
                 print('TaiJiOPCSim is Launched')
                 return
-        filePath = '..\\bin\\taiji-opcsim-server.exe'
+        from pathlib import Path
+        bin_path = Path(__file__).resolve().parent.parent / 'bin'
+        filePath = str(bin_path / 'taiji-opcsim-server.exe')
+
+        # filePath = '..\\bin\\taiji-opcsim-server.exe'
         try:
             self.sim_process = subprocess.Popen([filePath,'-s'], creationflags=subprocess.CREATE_NO_WINDOW)
         except FileNotFoundError:
