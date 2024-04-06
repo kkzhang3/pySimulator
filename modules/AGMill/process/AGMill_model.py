@@ -27,7 +27,8 @@ sim_ini_dict = {
 
 
 # 配置被控对象模型
-AGM_Power = { 'AGMPower': {
+AGM_Power_Model = {
+              'AGMPower': {
                             'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 1/220], 'den_s': [220, 1], 'iodelay_s': 20*60},
                             'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 1/300], 'den_s': [190, 1], 'iodelay_s': 10*60},
                             'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 1/150], 'den_s': [230, 1], 'iodelay_s': 10*60},
@@ -53,7 +54,7 @@ AGM_Power = { 'AGMPower': {
 class Sim(Simulink):
     def __init__(self) -> None:
         super().__init__(data = sim_ini_dict)
-        self.AGM_power_sim = MIMOSim(AGM_Power, sim_ini_dict, Ts = 30)
+        self.AGM_power_sim = MIMOSim(AGM_Power_Model, sim_ini_dict, Ts = 30)
 
         # 配置输出噪声序列
         # self.N = 10000
