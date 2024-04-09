@@ -47,7 +47,7 @@ jobs:
       - name: Install Cython for Python 3.12 x64
         if: matrix.python-version == '3.12'
         run:
-          pip install Cython        # Install Cython to compile .py files to .pyd
+          pip install Cython==0.29.36        # Install Cython to compile .py files to .pyd
 
       - name: Compile .py files to .pyd
         run: |
