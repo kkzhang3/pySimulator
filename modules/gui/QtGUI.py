@@ -154,7 +154,7 @@ class ServerDialog(QtWidgets.QDialog):
 class TaiJiSimulatorWidget(QtWidgets.QMainWindow):
     worker_thread = QtCore.QThread()
     opcserver_ip = '127.0.0.1'
-    opcserver_port = 9997
+    opcserver_port = 9999
 
     def __init__(self, parent=None):
         super(TaiJiSimulatorWidget, self).__init__(parent)
