@@ -12,6 +12,10 @@ graft modules/SCRsim2
 graft modules/SISOSim1
 graft modules/MIMO_2x2
 graft modules/ShellModel
+graft modules/AGMill
+graft modules/bin
+
+
 
 
 
