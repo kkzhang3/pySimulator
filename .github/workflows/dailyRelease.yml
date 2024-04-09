@@ -16,7 +16,7 @@ jobs:
         include:
           - python-version: '3.8.10'
             architecture: 'x86'
-          - python-version: '3.11.6'
+          - python-version: '3.12'
             architecture: 'x64'
     defaults:
       run:
@@ -44,8 +44,8 @@ jobs:
         run:
           pip install Cython==0.29.36        # Install Cython to compile .py files to .pyd
 
-      - name: Install Cython for Python 3.11.6 x64
-        if: matrix.python-version == '3.11.6' && matrix.architecture == 'x64'
+      - name: Install Cython for Python 3.12 x64
+        if: matrix.python-version == '3.12'
         run:
           pip install Cython        # Install Cython to compile .py files to .pyd
 
