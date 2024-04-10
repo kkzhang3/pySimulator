@@ -7,7 +7,7 @@
 
 # include README.md
 recursive-include modules/gui *.pyd *.svg
-recursive-include modules/ *.bat
+recursive-include modules *.bat
 
 graft modules/SCRsim2
 graft modules/SISOSim1
