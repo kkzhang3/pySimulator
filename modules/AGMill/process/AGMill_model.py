@@ -4,7 +4,7 @@ from collections import ChainMap
 from tjdcs import Simulink, MIMOSim  
 
 def FreshFeed2PebbleReturn(FreshFeedWeight, F80):
-    FxF80 = np.interp(F80, [80, 220], [0.1, 0.7]) 
+    FxF80 = np.interp(F80, [80, 220], [0.7, 0.1]) 
     return FreshFeedWeight*FxF80
 
 def Bypass2PebbleReturn(BypassWeight, rate = 0.7):
@@ -25,9 +25,7 @@ sim_ini_dict = {
                 'PebbleReturn': 650.0,  # 顽石返回重量(t/h)
                 'PebbleReturn_other': 0.0,
                 'Bin1Level': 36.9,      # 顽石仓1料位(%)
-                
                 'F80': 140,  # 进料粒度 (mm)
-               
                 '__Random_DV_ONOFF': 1, 
                 }
 
@@ -40,37 +38,38 @@ sim_ini_dict.update({
 # 配置被控对象模型
 AGMPower_Model = {
               'AGMPower': {
-                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 1/220], 'den_s': [220, 1], 'iodelay_s': 20*60},
-                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 1/300], 'den_s': [190, 1], 'iodelay_s': 10*60},
-                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 1/150], 'den_s': [230, 1], 'iodelay_s': 10*60},
-                            'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, 1/0.3], 'den_s': [220, 1], 'iodelay_s': 1*60},
-                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 1/400], 'den_s': [130, 1], 'iodelay_s': 3*60},
-                            'F80': {'mode': 'tf_s', 'num_s': [0, 1/60], 'den_s': [300, 1], 'iodelay_s': 20*60},
+                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 1/220], 'den_s': [150, 1], 'iodelay_s': 120},
+                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 1/300], 'den_s': [120, 1], 'iodelay_s': 120},
+                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 1/150], 'den_s': [130, 1], 'iodelay_s': 90},
+                            'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, 2], 'den_s': [10, 1], 'iodelay_s': 0},
+                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 1/400], 'den_s': [130, 1], 'iodelay_s': 10},
+                            'F80': {'mode': 'tf_s', 'num_s': [0, 1/60], 'den_s': [160, 1], 'iodelay_s': 120},
                            },
 
               'AGMCurrent': {
-                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 100/75], 'den_s': [180, 1], 'iodelay_s': 20*60},
-                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 100/160], 'den_s': [150, 1], 'iodelay_s': 10*60},
-                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 100/65], 'den_s': [200, 1], 'iodelay_s': 10*60},
-                            'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, 100/0.15], 'den_s': [80, 1], 'iodelay_s': 1*60},
-                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 100/210], 'den_s': [100, 1], 'iodelay_s': 3*60},
-                            'F80': {'mode': 'tf_s', 'num_s': [0, 100/35], 'den_s': [300, 1], 'iodelay_s': 20*60},
+                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 100/75], 'den_s': [130, 1], 'iodelay_s': 120},
+                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 100/160], 'den_s': [100, 1], 'iodelay_s': 120},
+                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 100/65], 'den_s': [110, 1], 'iodelay_s': 90},
+                            'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, -100/0.15], 'den_s': [10, 1], 'iodelay_s': 0},
+                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 100/210], 'den_s': [100, 1], 'iodelay_s': 10},
+                            'F80': {'mode': 'tf_s', 'num_s': [0, 100/35], 'den_s': [160, 1], 'iodelay_s': 120},
                            },
               
               'AGMWeight': {
-                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 0.25], 'den_s': [120, 1], 'iodelay_s': 20*60},
-                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 0.1], 'den_s': [120, 1], 'iodelay_s': 10*60},
-                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 0.4], 'den_s': [120, 1], 'iodelay_s': 10*60},
-                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 0.1], 'den_s': [80, 1], 'iodelay_s': 3*60},
+                            'FreshFeedWeight': {'mode': 'tf_s', 'num_s': [0, 0.25], 'den_s': [120, 1], 'iodelay_s': 120},
+                            'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, 0.1], 'den_s': [120, 1], 'iodelay_s': 120},
+                            'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 0.4], 'den_s': [120, 1], 'iodelay_s': 90},
+                            'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, -0.2], 'den_s': [50, 1], 'iodelay_s': 60},
+                            'CYCWeight': {'mode': 'tf_s', 'num_s': [0, 0.1], 'den_s': [80, 1], 'iodelay_s': 10},
                            },
               }
 
 
 PebbleReturn_Model = {
     'PebbleReturn': {
-        'FreshFeed2Pebble': {'mode': 'tf_s', 'num_s': [0, 1], 'den_s': [250, 1], 'iodelay_s': 20*60},
-        'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 1], 'den_s': [230, 1], 'iodelay_s': 10*60},
-        'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, 100/0.2], 'den_s': [200, 1], 'iodelay_s': 1*60},
+        'FreshFeed2Pebble': {'mode': 'tf_s', 'num_s': [0, 1], 'den_s': [180, 1], 'iodelay_s': 120},
+        'BypassWeight': {'mode': 'tf_s', 'num_s': [0, 1], 'den_s': [160, 1], 'iodelay_s': 120},
+        'AGMSpeed': {'mode': 'tf_s', 'num_s': [0, 100/0.2], 'den_s': [50, 1], 'iodelay_s': 60},
         'PebbleReturn_other': {'mode': 'tf_s', 'num_s': [0, 1], 'den_s': [20, 1], 'iodelay_s': 0}
     },
 }
@@ -78,9 +77,9 @@ PebbleReturn_Model = {
 
 BinLevel_Model = {
     'Bin1Level': {
-        'PebbleReturn': {'mode': 'tf_s', 'num_s': [0, 0.01/100], 'den_s': [80, 1], 'iodelay_s': 1*60, 'IntegralMark': 1},
+        'PebbleReturn': {'mode': 'tf_s', 'num_s': [0, 0.005/100], 'den_s': [80, 1], 'iodelay_s': 1*60, 'IntegralMark': 1},
         'BypassWeight': {'mode': 'tf_s', 'num_s': [0, -0.01/100], 'den_s': [60, 1], 'iodelay_s': 1*60, 'IntegralMark': 1},
-        'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, -0.01/100], 'den_s': [80, 1], 'iodelay_s': 1*60, 'IntegralMark': 1},
+        'CRU1Weight': {'mode': 'tf_s', 'num_s': [0, -0.005/100], 'den_s': [80, 1], 'iodelay_s': 1*60, 'IntegralMark': 1},
     }
 }
 
@@ -135,28 +134,26 @@ class Sim(Simulink):
 # 实例化仿真对象
 AGMSim = Sim()
 
-# if __name__ == '__main__':
-#     for k in range(0,1240*2):
-#         data = AGMSim.get_data()
-#         data['__Random_DV_ONOFF'] = 1
-#         data['FreshFeedWeight'] = 1599
-#         # if k > 300:
-#         #     data['BypassWeight'] = 300
-#         # #     data['FreshFeedWeight'] = 1340
-#         AGMSim.run()
+if __name__ == '__main__':
+    for k in range(0,1240*2):
+        data = AGMSim.get_data()
+        data['__Random_DV_ONOFF'] = 1
+        data['FreshFeedWeight'] = 1599
+        if k > 500:
+            data['BypassWeight'] = 200
+        #     data['FreshFeedWeight'] = 1340
+        AGMSim.run()
     
-#     AGMSim.plot_record_data(taglist=['CRU1Weight','CYCWeight', 'F80'])
-#     AGMSim.plot_record_data(taglist=['AGMPower', 'AGMCurrent'])
-    
-#     AGMSim.plot_record_data(taglist=['PebbleReturn', 'Bin1Level'])
-    
-#     from matplotlib import pyplot as plt
-#     plt.show()
+    AGMSim.plot_record_data(taglist=['CRU1Weight','CYCWeight', 'F80','BypassWeight'])
+    AGMSim.plot_record_data(taglist=['AGMPower', 'AGMCurrent'])
+    AGMSim.plot_record_data(taglist=['PebbleReturn', 'Bin1Level'])
+    from matplotlib import pyplot as plt
+    plt.show()
     
     
 
-if __name__ == '__main__':
-    from tjdcs import SimulinkOPCGateTask
-    task = SimulinkOPCGateTask(Simulator = AGMSim, group_tag = 'S5')
-    task.run()
+# if __name__ == '__main__':
+#     from tjdcs import SimulinkOPCGateTask
+#     task = SimulinkOPCGateTask(Simulator = AGMSim, group_tag = 'S5')
+#     task.run()
 
