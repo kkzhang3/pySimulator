@@ -3,6 +3,7 @@ logs/
 pki/
 ~$*.docx
 *.code-workspace
+tj010Logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
