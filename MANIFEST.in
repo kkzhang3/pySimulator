@@ -16,7 +16,7 @@ graft modules/ShellModel
 graft modules/AGMill
 graft modules/bin
 
-
+graft demoScripts/
 
 
 
