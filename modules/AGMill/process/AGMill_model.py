@@ -113,9 +113,9 @@ class AntiWindupLimter:
 class Sim(Simulink):
     def __init__(self) -> None:
         super().__init__(data = sim_ini_dict)
-        self.AGMpower_sim = MIMOSim(AGMPower_Model, sim_ini_dict, Ts = 30)
-        self.RebbleReturn_sim = MIMOSim(PebbleReturn_Model, sim_ini_dict, Ts = 30)
-        self.BinLevel_sim = MIMOSim(BinLevel_Model, sim_ini_dict, Ts = 30)
+        self.AGMpower_sim = MIMOSim(AGMPower_Model, sim_ini_dict, Ts = 10)
+        self.RebbleReturn_sim = MIMOSim(PebbleReturn_Model, sim_ini_dict, Ts = 10)
+        self.BinLevel_sim = MIMOSim(BinLevel_Model, sim_ini_dict, Ts = 10)
         self.Limiter = AntiWindupLimter()
 
         # 配置输出噪声序列
