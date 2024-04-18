@@ -1,0 +1,4 @@
+file: sim.py
+object: TrainingSISO2 
+defaultGroup: T2
+description: This is a simulation of SISO model 0.8/s(30s+1)*exp(-17s)

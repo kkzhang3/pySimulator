@@ -84,7 +84,6 @@ BinLevel_Model = {
 }
 
 class AntiWindupLimter:
-
     def __init__(self):
         self._u0 = None
         self._y0 = None
@@ -121,13 +120,13 @@ class Sim(Simulink):
         # 配置输出噪声序列
         self.N = 10000
         np.random.seed(1)
-        v1 = signal.lfilter([1, 0.7], np.convolve([1, -0.9], [1, -0.95]), np.random.randn(self.N))
+        v1 = signal.lfilter([1, 0.7], np.convolve([1, -0.5], [1, -0.9]), np.random.randn(self.N))
         self.CRU1Weight_random = sim_ini_dict['CRU1Weight'] + 70.0*v1/np.std(v1)
 
-        v2 = signal.lfilter([1, 0.7], np.convolve([1, -0.98], [1, -0.97]), np.random.randn(self.N))
+        v2 = signal.lfilter([1, 0.7], np.convolve([1, -0.9], [1, -0.7]), np.random.randn(self.N))
         self.CYCWeight_random = sim_ini_dict['CYCWeight'] + 70.0 * v2 / np.std(v2)
 
-        v3 = signal.lfilter([1, 0.7], np.convolve([1, -0.99], [1, -0.99]), np.random.randn(self.N))
+        v3 = signal.lfilter([1, 0.7], np.convolve([1, -0.8], [1, -0.6]), np.random.randn(self.N))
         self.F80_random = sim_ini_dict['F80'] + 10.0 * v3 / np.std(v3)
 
     def task(self) -> None:
@@ -160,26 +159,27 @@ class Sim(Simulink):
 # 实例化仿真对象
 AGMSim = Sim()
 
-# if __name__ == '__main__':
-#     for k in range(0,1240*2):
-#         data = AGMSim.get_data()
-#         data['__Random_DV_ONOFF'] = 1
-#         data['FreshFeedWeight'] = 1600
-#         if k > 1000:
-#             data['BypassWeight'] = 300
-#             # data['FreshFeedWeight'] = 1340
-#         AGMSim.run()
+if __name__ == '__main__':
+    for k in range(0,10*10):
+        data = AGMSim.get_data()
+        data['__Random_DV_ONOFF'] = 0
+        
+        data['AGMSpeed'] = 10.5
+        # if k > 1000:
+        #     data['BypassWeight'] = 300
+            # data['FreshFeedWeight'] = 1340
+        AGMSim.run()
     
-#     AGMSim.plot_record_data(taglist=['FreshFeedWeight','BypassWeight', 'Bin1Level'])
-#     # AGMSim.plot_record_data(taglist=['AGMPower', 'AGMCurrent'])
-#     # AGMSim.plot_record_data(taglist=['PebbleReturn', 'Bin1Level'])
-#     from matplotlib import pyplot as plt
-#     plt.show()
+    AGMSim.plot_record_data(taglist=['FreshFeedWeight','BypassWeight', 'Bin1Level'])
+    AGMSim.plot_record_data(taglist=['AGMPower', 'AGMCurrent'])
+    # AGMSim.plot_record_data(taglist=['PebbleReturn', 'Bin1Level'])
+    from matplotlib import pyplot as plt
+    plt.show()
     
     
 
-if __name__ == '__main__':
-    from tjdcs import SimulinkOPCGateTask
-    task = SimulinkOPCGateTask(Simulator = AGMSim, group_tag = 'S5')
-    task.run()
+# if __name__ == '__main__':
+#     from tjdcs import SimulinkOPCGateTask
+#     task = SimulinkOPCGateTask(Simulator = AGMSim, group_tag = 'S5')
+#     task.run()
 
