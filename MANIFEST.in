@@ -15,6 +15,8 @@ graft modules/MIMO_2x2
 graft modules/ShellModel
 graft modules/AGMill
 graft modules/bin
+graft modules/TrainingSISO
+graft modules/TrainingMIMO_2x3
 
 graft demoScript/
 

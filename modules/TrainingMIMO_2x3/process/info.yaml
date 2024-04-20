@@ -1,0 +1,4 @@
+file: MIMOmodel.py
+object: MIMOModel_2x3 
+defaultGroup: T3
+description: This is a simulation of MIMO model with 2MVs, 1DV and 3CVs.
