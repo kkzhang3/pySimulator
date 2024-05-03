@@ -1,0 +1,4 @@
+file: sim.py
+object: TrainingSISO 
+defaultGroup: T2
+description: This is a simulation of a Integral SISO model
