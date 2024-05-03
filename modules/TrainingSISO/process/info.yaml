@@ -1,4 +1,4 @@
 file: sim.py
 object: TrainingSISO 
 defaultGroup: T1
-description: This is a simulation of SISO model 0.8/(30s+1)*exp(-17s)
+description: This is a simulation of SISO model 3.8/(30s+1)*exp(-17s)

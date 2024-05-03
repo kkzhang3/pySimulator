@@ -16,6 +16,7 @@ graft modules/ShellModel
 graft modules/AGMill
 graft modules/bin
 graft modules/TrainingSISO
+graft modules/TrainingIntegral
 graft modules/TrainingMIMO_2x3
 
 graft demoScript/
