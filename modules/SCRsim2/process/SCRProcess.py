@@ -137,7 +137,14 @@ SCRModel = SCRSim()
 # 如果直接运行此程序，则在OPCgate中创建该被控对象的仿真器（OPC通讯配置）
 if __name__ == '__main__':
     from tjdcs import SimulinkOPCGateTask
-    task = SimulinkOPCGateTask('127.0.0.1', 9999, SCRModel, group_tag='SCR2')
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=9997, help="OPC RPC server port")
+    parser.add_argument("--group", type=str, default="S1", help="OPC group tag")
+    args = parser.parse_args()
+    task = SimulinkOPCGateTask(
+        port=args.port, group_tag=args.group, Simulator=SCRModel)
     task.run()
 
 

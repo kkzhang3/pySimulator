@@ -143,7 +143,9 @@ class ShellSim(Simulink):
         v7 = signal.lfilter(
             [1, -0.5, 0.7], np.convolve([1, -0.95], [1, -0.98]), np.random.randn(self.N)
         )
-        self.v = {f"CV{i}": eval(f"v{i}") for i in range(1, 8)}
+        
+        # self.v = {f"CV{i}": eval(f"v{i}") for i in range(1, 8)}
+        self.v = {"CV1":v1, "CV2":v2, "CV3":v3, "CV4":v4, "CV5":v5, "CV6":v6, "CV7":v7}
         for value in self.v.values():
             value -= np.mean(value)
             value /= np.std(value)
@@ -165,8 +167,8 @@ class ShellSim(Simulink):
         )
         dv2 -= np.mean(dv2)
         dv2 = 0.9 * dv2 / np.std(dv2) + sim_ini_dict["DV2"]
-        self.dv = {f"DV{i}": eval(f"dv{i}") for i in range(1, 3)}
-
+        # self.dv = {f"DV{i}": eval(f"dv{i}") for i in range(1, 3)}
+        self.dv = {"DV1":dv1, "DV2":dv2}
         self.cv_array_dict = {
             f"CV{i}array_10min": deque(maxlen=600) for i in range(1, 8)
         }
@@ -212,6 +214,12 @@ ShellModel = ShellSim()
 
 if __name__ == "__main__":
     from tjdcs import SimulinkOPCGateTask
+    import argparse
 
-    task = SimulinkOPCGateTask(Simulator=ShellModel, group_tag="S1")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=9997, help="OPC RPC server port")
+    parser.add_argument("--group", type=str, default="S1", help="OPC group tag")
+    args = parser.parse_args()
+    task = SimulinkOPCGateTask(
+        port=args.port, group_tag=args.group, Simulator=ShellModel)
     task.run()

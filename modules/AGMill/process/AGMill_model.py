@@ -159,6 +159,8 @@ class Sim(Simulink):
 # 实例化仿真对象
 AGMSim = Sim()
 
+
+'''
 if __name__ == '__main__':
     for k in range(0,10*10):
         data = AGMSim.get_data()
@@ -175,11 +177,17 @@ if __name__ == '__main__':
     # AGMSim.plot_record_data(taglist=['PebbleReturn', 'Bin1Level'])
     from matplotlib import pyplot as plt
     plt.show()
-    
-    
+'''
 
-# if __name__ == '__main__':
-#     from tjdcs import SimulinkOPCGateTask
-#     task = SimulinkOPCGateTask(Simulator = AGMSim, group_tag = 'S5')
-#     task.run()
+if __name__ == "__main__":
+    from tjdcs import SimulinkOPCGateTask
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=9997, help="OPC RPC server port")
+    parser.add_argument("--group", type=str, default="S1", help="OPC group tag")
+    args = parser.parse_args()
+    task = SimulinkOPCGateTask(
+        port=args.port, group_tag=args.group, Simulator=AGMSim)
+    task.run()
 

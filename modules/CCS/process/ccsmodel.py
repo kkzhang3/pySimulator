@@ -129,6 +129,13 @@ ccs_process1 = CCSSim()
  
 if __name__ == '__main__':
     from tjdcs import SimulinkOPCGateTask
-    task = SimulinkOPCGateTask(Simulator = CCSSim())
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--port", type=int, default=9997, help="OPC RPC server port")
+    parser.add_argument("--group", type=str, default="S1", help="OPC group tag")
+    args = parser.parse_args()
+    task = SimulinkOPCGateTask(
+        port=args.port, group_tag=args.group, Simulator=ccs_process1)
     task.run()
 
